@@ -1,0 +1,62 @@
+
+body{
+  background-color:#F0ECE3;
+}
+.home-body{
+  background-color:#F0ECE3;
+
+  text-align: center;
+  padding-top:10%;
+  padding-bottom:10%;
+  margin: auto;
+}
+.header-sec{
+  background-color:#79B4B7;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.btn-secondary{
+  margin: 10px;
+}
+.hometext{
+  padding-bottom: 20px;
+}
+.homebtn{
+  background-color: #79B4B7;
+
+}
+.footer-sec{
+    background-color:#79B4B7;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer-padding{
+  padding-bottom:3%;
+}
+.form{
+  margin: 35px;
+}
+.btnForm{
+  text-align: center;
+  margin-top: 25px;
+}
+.sumbit{
+ margin-left: 25px;
+}
+.form-padding{
+  padding-bottom:5px;
+}
+.table-padding{
+  padding-bottom:3px;
+}
+.table-btn{
+  padding-bottom:15px;
+}
+.table-body{
+  margin: 15px;
+}
+.passwordbox{
+  margin-bottom:35px;
+
+}

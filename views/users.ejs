@@ -1,0 +1,58 @@
+
+<%- include("partials/header"); -%>
+
+
+        <div class="table-padding">
+
+        </div>
+
+        <div class="table-body">
+
+          <form action="/users"  method="post">
+    <div class="form-row"  >
+      <div class="col-2">
+        <input type="text" class="form-control"  name="searchName" placeholder="Search with Name" >
+      </div>
+      <div class="col-4">
+        <button type="submit"  class="btn btn-secondary btn-sm ">Search</button>
+        <a href="/user" class="btn btn-secondary btn-sm " role="button">Add New</a>
+
+      </div>
+
+    </div>
+  </form>
+          <table class="table table-striped">
+      <thead>
+        <tr>
+
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Password</th>
+          <th scope="col">Address</th>
+          <th scope="col">Country</th>
+        
+        </tr>
+      </thead>
+
+            <tbody>
+          <%  personlist.forEach(function(hepsi){ %>
+          <tr>
+
+          <td> <%= hepsi.firstname + " " + hepsi.lastname %> </td>
+          <td>  <%= hepsi.email  %> </td>
+          <td>  <%= hepsi.password  %> </td>
+          <td>  <%= hepsi.address  %> </td>
+          <td>  <%= hepsi.country  %> </td>
+
+
+          <td>    <a href="/user/<%=hepsi._id%>"  class="btn btn-primary btn-sm " role="button">Edit</a></td>
+            <td>    <a href="/delete/<%=hepsi._id%>"  class="btn btn-primary btn-sm" role="button">Delete</a></td>
+          </tr>
+           <% }) %>
+
+
+      </tbody>
+    </table>
+        </div>
+
+        <%- include("partials/footer"); -%>
